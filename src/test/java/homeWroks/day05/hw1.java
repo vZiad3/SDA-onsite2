@@ -35,7 +35,7 @@ public class hw1 {
     }
 
 //@Test
-//    public void task1() throws InterruptedException {
+//     public void task1() throws InterruptedException {
 //        List<WebElement> radioButt = driver.findElements(By.xpath("//div[starts-with(@class,'custom-control')]"));
 //        radioButt.get(0).click();
 //    Assert.assertTrue(radioButt.get(0).isSelected());
