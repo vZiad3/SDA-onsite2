@@ -31,6 +31,8 @@ public class ameerChallenge {
     }
     @AfterClass
     public static void tearDown(){
+
+       // driver.quit();
     }
 
     @Test
@@ -47,12 +49,13 @@ public class ameerChallenge {
               checkCompl.click();
               Assert.assertTrue(checkCompl.isDisplayed());
 
-              WebElement deleteTask = driver.findElement(By.xpath("(//i[@class='fa fa-trash'])[4]"));
-              deleteTask.click();
-              Assert.assertTrue(deleteTask.isDisplayed());
+          WebElement deleteTask = driver.findElement(By.xpath("(//i[@class='fa fa-trash'])[3]"));
+          deleteTask.click();
+          Assert.assertTrue(deleteTask.isDisplayed());
 
-        WebElement checkCompl1 = driver.findElement(By.xpath("//li[@xpath='1']"));
-        checkCompl1.click();
+
+  //     WebElement checkCompl1 = driver.findElement(By.xpath("//li[@xpath='1']"));
+  //     checkCompl1.click();
 
 
 
