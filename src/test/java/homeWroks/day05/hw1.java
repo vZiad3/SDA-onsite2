@@ -55,6 +55,8 @@ public class hw1 {
     @Test
     public void task1() throws InterruptedException {
         List<WebElement> radioButtons = driver.findElements(By.xpath("//div[starts-with(@class,'custom-control')]"));
+       // JavascriptExecutor js = (JavascriptExecutor) driver;
+       // js.executeScript("arguments[0].click()", element);
 
         for (WebElement radioButton : radioButtons) {
             radioButton.click();

@@ -51,7 +51,7 @@ public class ameerChallenge {
 
           WebElement deleteTask = driver.findElement(By.xpath("(//i[@class='fa fa-trash'])[3]"));
           deleteTask.click();
-          Assert.assertTrue(deleteTask.isDisplayed());
+          Assert.assertFalse("The task is still there",deleteTask.isDisplayed());
 
 
   //     WebElement checkCompl1 = driver.findElement(By.xpath("//li[@xpath='1']"));
@@ -70,10 +70,10 @@ public class ameerChallenge {
       //  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @Test
-    public void deleteTask(){
+    //@Test
+    //public void deleteTask(){
 
     }
 
 
-}
+
