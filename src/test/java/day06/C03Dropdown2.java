@@ -22,7 +22,8 @@ public class C03Dropdown2 {
     }
     @AfterClass
     public static void tearDown(){
-        driver.quit();
+
+        //driver.quit();
     }
     @Test
     public void dropDownTest(){

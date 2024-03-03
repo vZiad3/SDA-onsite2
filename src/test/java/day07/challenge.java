@@ -30,7 +30,7 @@ public class challenge {
 
     @AfterClass
     public static void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
 
@@ -137,3 +137,5 @@ public class challenge {
 Thank you for the amazing learning techniques Mr.Suleyman & Mr.Emir, and Cluarsway
 
 */
+
+
