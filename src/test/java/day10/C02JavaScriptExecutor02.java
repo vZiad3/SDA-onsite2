@@ -7,20 +7,40 @@ import utilities.JScriptUtilities;
 import utilities.TestBase;
 
 public class C02JavaScriptExecutor02 extends TestBase {
-  // Go to URL: https://api.jquery.com/dblclick/
-  // Double click on the blue square at the bottom of the page and then write the changed color.
+    /*
+    Go to URL: https://api.jquery.com/dblclick/
+    Double click on the blue square at the bottom of the page
+    Write the changed color on search box on the top of the page
+    Click "jQuery in Action" at the bottom of the page.
+
+     */
     @Test
     public void test(){
+
         driver.get("https://api.jquery.com/dblclick/");
-        WebElement iframe = driver.findElement(By.cssSelector("body>div"));
-        JScriptUtilities.scrollIntoViewJS(driver,iframe);
-        driver.switchTo().frame(iframe);
-        WebElement colourButt = driver.findElement(By.xpath("//span[.='Double click the block']/preceding-sibling::div"));
-        String colorName = colourButt.getCssValue("back-ground-color");
+        //switch to another frame
+        driver.switchTo().frame(0);
+        WebElement colouredButton =driver.findElement(By.cssSelector("body>div"));
+
+        JScriptUtilities.scrollIntoViewJS(driver,colouredButton);
+
         actions
-                .doubleClick(colourButt)
+                .doubleClick(colouredButton)
                 .perform();
 
+        String colorCode = colouredButton.getCssValue("background-color");
+        //return to the main page
+        driver.switchTo().defaultContent();
+
+        JScriptUtilities.scrollAllUpByJS(driver);
+
+        // write on the search the color
+        driver.findElement(By.name("s")).sendKeys(colorCode);
+
+
+        // click on the book
+        JScriptUtilities.scrollDownByJS(driver);
+        driver.findElement(By.xpath("//a[@href = 'https://www.manning.com/books/jquery-in-action-third-edition']")).click();
 
     }
 }

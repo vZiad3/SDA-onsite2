@@ -37,6 +37,7 @@ public class C01JavaScriptExecutor extends TestBase {
         driver.get("https://www.linkedin.com");
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("alert(\"hi SDA\");");
+        js.executeScript("alert(\"hi SDA\");");
         driver.switchTo().alert().accept();         // we need to handle alert then we go to the second line
 
         //Scrolling down by Jscript

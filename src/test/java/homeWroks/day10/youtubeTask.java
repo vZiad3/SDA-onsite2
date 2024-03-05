@@ -1,4 +1,4 @@
-package day10;
+package homeWroks.day10;
 
 import org.junit.Assert;
 import org.junit.Test;
