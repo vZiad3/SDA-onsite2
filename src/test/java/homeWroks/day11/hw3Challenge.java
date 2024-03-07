@@ -39,6 +39,7 @@ public class hw3Challenge extends TestBase {
         driver.findElement(By.xpath("//button[@type = 'submit']")).click();
 
         // Navigate to PIM section
+        driver.findElement(By.xpath("//*[.='PIM']")).click();
         driver.findElement(By.xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][.='PIM']")).click();
 
         // Click on Configuration and select Data Import
@@ -49,6 +50,10 @@ public class hw3Challenge extends TestBase {
         // Wait for download link to appear
         // driver.findElement(By.className("download-link")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("download-link")));
+
+        //After downloading the CSV, i am going to use Thread sleep by java because the download speed , so the PC can locate it
+
+        Thread.sleep(2000);         //Not recommended, but  its the only way to stop the whole code
 
         // Define path for the downloaded file
         String userHomeC = System.getProperty("user.home");
@@ -65,5 +70,6 @@ public class hw3Challenge extends TestBase {
         // Assert that file if  it's downloaded successfully
         Assert.assertTrue(isDownloaded);
         System.out.println("isDownloaded = " + isDownloaded);
+
     }
 }
