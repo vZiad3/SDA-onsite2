@@ -3,6 +3,7 @@ package day09;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import utilities.JScriptUtilities;
 import utilities.TestBase;
 
 import java.time.Duration;
@@ -21,5 +22,7 @@ public class C04HorizantalSlider extends TestBase {
                 .dragAndDropBy(sliderButton,0,32)
                 .build()        // it will build both and send them (perform)
                 .perform();
+
+        JScriptUtilities.executeJScommand(driver,sliderButton,"alert(\"hi SDA\");");
     }
 }
