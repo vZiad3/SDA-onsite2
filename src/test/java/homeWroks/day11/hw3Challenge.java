@@ -18,6 +18,12 @@ public class hw3Challenge extends TestBase {
     // Test method to verify downloading a file
     @Test
     public void page() throws InterruptedException {
+
+        //Declaring variables, so we can use it and it should be more readable
+        By userName = By.xpath("//input[@name='username']");
+        By passWord = By.xpath("//input[@name='password']");
+        By dataImpEle = By.xpath("//a[@class='oxd-topbar-body-nav-tab-link'][.='Data Import']");
+
         // Open the webpage
         driver.get("https://opensource-demo.orangehrmlive.com/");
 
@@ -25,15 +31,15 @@ public class hw3Challenge extends TestBase {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
         // Find username field, input username, and wait for visibility
-        WebElement userName = driver.findElement(By.xpath("//input[@name='username']"));
-        userName.click();
-        userName.sendKeys("Admin");
-        wait.until(ExpectedConditions.visibilityOf(userName));
+        WebElement userNameEle = driver.findElement(userName);
+        userNameEle.click();
+        userNameEle.sendKeys("Admin");
+        wait.until(ExpectedConditions.visibilityOf(userNameEle));
 
         // Find password field, input password
-        WebElement passWord = driver.findElement(By.xpath("//input[@name='password']"));
-        passWord.click();
-        passWord.sendKeys("admin123");
+        WebElement passWordEle = driver.findElement(passWord);
+        passWordEle.click();
+        passWordEle.sendKeys("admin123");
 
         // Click on login button
         driver.findElement(By.xpath("//button[@type = 'submit']")).click();
@@ -44,8 +50,8 @@ public class hw3Challenge extends TestBase {
 
         // Click on Configuration and select Data Import
         driver.findElement(By.xpath("//span[@class='oxd-topbar-body-nav-tab-item']")).click();
-        WebElement dataImport = driver.findElement(By.xpath("//a[@class='oxd-topbar-body-nav-tab-link'][.='Data Import']"));
-        JScriptUtilities.clickElementByJS(driver,dataImport);
+        WebElement dataImportEle = driver.findElement(dataImpEle);
+        JScriptUtilities.clickElementByJS(driver,dataImportEle);
 
         // Wait for download link to appear
         // driver.findElement(By.className("download-link")).click();
