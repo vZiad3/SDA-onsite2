@@ -34,6 +34,7 @@ public class hw3Challenge extends TestBase {
         WebElement userNameEle = driver.findElement(userName);
         userNameEle.click();
         userNameEle.sendKeys("Admin");
+
         wait.until(ExpectedConditions.visibilityOf(userNameEle));
 
         // Find password field, input password
@@ -45,8 +46,8 @@ public class hw3Challenge extends TestBase {
         driver.findElement(By.xpath("//button[@type = 'submit']")).click();
 
         // Navigate to PIM section
-        driver.findElement(By.xpath("//*[.='PIM']")).click();
-        //driver.findElement(By.xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][.='PIM']")).click();
+        //driver.findElement(By.xpath("//*[.='PIM']")).click();
+        driver.findElement(By.xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][.='PIM']")).click();
 
         // Click on Configuration and select Data Import
         driver.findElement(By.xpath("//span[@class='oxd-topbar-body-nav-tab-item']")).click();
