@@ -1,0 +1,35 @@
+2024-03-11 13:24:36 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:24:36 TRACE C03LoggerTask:29 - This is a trace message
+2024-03-11 13:24:36 TRACE C03LoggerTask:36 - This is a trace message
+2024-03-11 13:28:59 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:28:59 TRACE C03LoggerTask:29 - This is a trace message
+2024-03-11 13:28:59 TRACE C03LoggerTask:36 - This is a trace message
+2024-03-11 13:32:24 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:32:24 TRACE C03LoggerTask:29 - This is a trace message
+2024-03-11 13:32:25 TRACE C03LoggerTask:36 - This is a trace message
+2024-03-11 13:37:26 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:37:26 TRACE C03LoggerTask:29 - This is a trace message
+2024-03-11 13:37:26 TRACE C03LoggerTask:36 - This is a trace message
+2024-03-11 13:37:26 INFO  C03LoggerTask:45 - info from logger
+2024-03-11 13:37:57 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:37:57 TRACE C03LoggerTask:29 - This is a trace message
+2024-03-11 13:37:57 TRACE C03LoggerTask:36 - This is a trace message
+2024-03-11 13:37:57 INFO  C03LoggerTask:45 - info from logger
+2024-03-11 13:41:43 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:41:43 TRACE C03LoggerTask:29 - This is a trace message
+2024-03-11 13:41:43 TRACE C03LoggerTask:36 - This is a trace message
+2024-03-11 13:41:43 INFO  C03LoggerTask:45 - info from logger
+2024-03-11 13:42:46 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:42:47 TRACE C03LoggerTask:29 - This is a trace message
+2024-03-11 13:42:47 TRACE C03LoggerTask:36 - This is a trace message
+2024-03-11 13:42:47 INFO  C03LoggerTask:45 - info from logger
+2024-03-11 13:47:57 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:48:13 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:49:16 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:49:16 TRACE C03LoggerTask:29 - This is a trace message
+2024-03-11 13:49:16 TRACE C03LoggerTask:36 - This is a trace message
+2024-03-11 13:49:16 INFO  C03LoggerTask:45 - info from logger
+2024-03-11 13:51:13 TRACE C03LoggerTask:23 - This is a trace message
+2024-03-11 13:51:13 TRACE C03LoggerTask:29 - This is a trace message
+2024-03-11 13:51:13 TRACE C03LoggerTask:36 - This is a trace message
+2024-03-11 13:51:13 INFO  C03LoggerTask:45 - info from logger
